@@ -1,0 +1,20 @@
+@import "../../utilities/variables.scss";
+
+.button-container {
+  cursor: pointer;
+  background-color: $colorAba;
+  border: none;
+  padding: 8px 32px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.16);
+}
+
+button:hover {
+  background-color: $colorAbaLight;
+}
+
+*:focus {
+  outline: none;
+}
