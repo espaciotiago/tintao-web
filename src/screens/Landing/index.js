@@ -18,7 +18,7 @@ const Landing = () => {
             Lorem ipsum dolor sit amet consectetur adipiscing elit per, nullam
             semper nisl aliquet quisque curae vestibulum.
           </p>
-          <Button label="EMPECEMOS" />
+          <Button label="VISITAR LA TIENDA" />
         </div>
         <div className="rigth-container">
           <img src={logoWhite} alt="logo-tintao" />

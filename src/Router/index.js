@@ -1,10 +1,18 @@
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import { Landing } from "../screens";
+import { Landing, LandingProduct, Store } from "../screens";
 
 const MainRouter = () => {
   return (
     <Router>
       <Switch>
+        <Route path="/products">
+          <LandingProduct />
+        </Route>
+
+        <Route path="/store">
+          <Store />
+        </Route>
+
         <Route path="/">
           <Landing />
         </Route>

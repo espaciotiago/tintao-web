@@ -1,116 +1,72 @@
 @import "../../utilities/variables.scss";
 
-.backgrounded-image {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  .background-image {
-    z-index: -1;
-    position: fixed;
+.backgrounded {
+  .logo-container {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    img{
+      height: 140px;
+    }
   }
 }
 
-.landing-container {
-  display: grid;
-  grid-template-areas: "title logo";
-  grid-gap: 16px;
-  justify-content: center;
-  align-items: center;
+.product-landing-container {
+  width: 100vw;
+  height: 100vh;
   h1,
   h2,
   h3,
   h4 {
-    color: $colorTitleLight;
     font-weight: bold;
   }
   p,
   label,
   span {
-    color: $colorTextLight;
+    color: $colorBrown;
   }
 
   h1 {
     font-size: 64px;
-    max-width: 70%;
   }
 
   p {
-    max-width: 60%;
     margin-bottom: 32px;
   }
 
   .rigth-container {
-    grid-area: logo;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40vw;
     height: 100%;
-    padding: 32px;
+    background: red;
     img {
-      max-width: 90%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
   .left-container {
-    grid-area: title;
-    height: 100%;
-    padding: 32px;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    h1 {
+      width: 100%;
+    }
   }
 
-  .logo-tintao-min {
-    display: none;
+  .actions {
+    width: 100%;
+    margin-top: 32px;
   }
 }
 
 //Media queries implementation for each screen defined on the variables cases
 @media (max-width: $laptopScreen) {
-  .landing-container {
-    grid-template-areas: "logo" "title";
-
-    h1 {
-      font-size: 42px;
-    }
-
-    .rigth-container {
-      height: 220px;
-      img {
-        max-width: 90%;
-        height: 220px;
-      }
-    }
-  }
 }
 
 @media (max-width: $mobileLScreen) {
-  .landing-container {
-    grid-template-areas: "logo" "title";
-
-    h1,
-    p {
-      max-width: 100%;
-    }
-
-    p {
-      font-size: 14px;
-    }
-
-    .rigth-container {
-      height: 140px;
-      img {
-        max-width: 90%;
-        height: 140px;
-      }
-    }
-
-    .left-container {
-    }
-  }
-}
-
-@media (max-width: $mobileMScreen) {
-}
-
-@media (max-width: $mobileSScreen) {
 }
