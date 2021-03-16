@@ -1,8 +1,15 @@
+import { useHistory } from "react-router-dom";
 import { logoWhite, landingBackground } from "../../assets";
 import { Button, Indicator } from "../../components";
 import "./styles.scss";
 
 const Landing = () => {
+  const history = useHistory();
+
+  function start() {
+    history.push("./store");
+  }
+
   return (
     <div className="backgrounded-image">
       <img
@@ -18,7 +25,7 @@ const Landing = () => {
             Lorem ipsum dolor sit amet consectetur adipiscing elit per, nullam
             semper nisl aliquet quisque curae vestibulum.
           </p>
-          <Button label="VISITAR LA TIENDA" />
+          <Button label="VISITAR LA TIENDA" onClick={start} />
         </div>
         <div className="rigth-container">
           <img src={logoWhite} alt="logo-tintao" />

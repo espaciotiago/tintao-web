@@ -11,6 +11,9 @@ import icCar from "./images/shopping-cart.png";
 import logoWhite from "./images/logo-white.png";
 import logo from "./images/logo.png";
 import landingBackground from "./images/landing-background.png";
+import wp from "./images/whatsapp.svg";
+import fb from "./images/facebook.svg";
+import ig from "./images/instagram.svg";
 
 export {
   abaLanding,
@@ -26,4 +29,7 @@ export {
   logoWhite,
   logo,
   landingBackground,
+  wp,
+  fb,
+  ig,
 };

@@ -13,6 +13,10 @@ const MainRouter = () => {
           <Store />
         </Route>
 
+        <Route path="/store/:productId">
+          <Store />
+        </Route>
+
         <Route path="/">
           <Landing />
         </Route>
